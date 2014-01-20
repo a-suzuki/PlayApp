@@ -10,3 +10,7 @@ libraryDependencies ++= Seq(
 
 play.Project.playJavaSettings
 ScctPlugin.instrumentSettings
+
+seq(ScctPlugin.instrumentSettings : _*)
+
+seq(com.github.theon.coveralls.CoverallsPlugin.coverallsSettings: _*)
